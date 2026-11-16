@@ -1,0 +1,50 @@
+name: Supporthenvendelse
+description: Be om hjelp med et produkt fra Lea Marketing
+title: "[Support]: "
+labels: ["support"]
+body:
+  - type: dropdown
+    id: product
+    attributes:
+      label: Produkt
+      description: Hvilket produkt gjelder henvendelsen?
+      options:
+        - StemmeApp
+        - Cluefishing
+        - BizPlanPilot
+        - Andre produkter
+    validations:
+      required: true
+  - type: dropdown
+    id: request_type
+    attributes:
+      label: Hva trenger du hjelp med?
+      options:
+        - Innlogging eller tilgang
+        - Teknisk feil
+        - Hvordan bruke en funksjon
+        - Betaling eller abonnement
+        - Personvern eller dataforespørsel
+        - Tilbakemelding eller forbedringsforslag
+        - Annet
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Hva skjedde?
+      description: Beskriv hva du forsøkte å gjøre, hva du forventet, og hva som faktisk skjedde.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Nyttig teknisk informasjon
+      description: Oppgi gjerne tidspunkt, nettleser, enhet og eventuell feilmelding. Ikke del passord, betalingskortdata eller andre sensitive opplysninger.
+  - type: checkboxes
+    id: acknowledgement
+    attributes:
+      label: Bekreftelse
+      options:
+        - label: Jeg har ikke delt passord, betalingskortopplysninger eller andre sensitive opplysninger.
+          required: true

@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="LeaSupport hjelper deg med StemmeApp, Cluefishing, BizPlanPilot og andre produkter fra Lea Marketing.">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="LeaSupport | Hjelp til Lea Marketing-produkter">
+  <meta property="og:description" content="Finn hjelp, send en supporthenvendelse og les om personvern og tilgjengelighet.">
+  <meta property="og:type" content="website">
+  <title>LeaSupport | Hjelp til Lea Marketing-produkter</title>
+  <style>
+    :root { --navy:#102a43; --blue:#1976d2; --sky:#eaf4ff; --ink:#14212e; --muted:#5e6b78; --line:#dbe4ed; --white:#fff; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; color:var(--ink); background:#f8fafc; font:16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    a { color:inherit; }
+    .wrap { width:min(1120px,calc(100% - 2rem)); margin:auto; }
+    header { color:var(--white); background:var(--navy); }
+    .nav { display:flex; align-items:center; justify-content:space-between; gap:1rem; min-height:70px; }
+    .brand { font-size:1.15rem; font-weight:800; text-decoration:none; }
+    .nav-links { display:flex; flex-wrap:wrap; gap:1rem; font-size:.9rem; }
+    .nav-links a { text-decoration:none; opacity:.9; }
+    .nav-links a:hover { text-decoration:underline; }
+    .hero { padding:4.8rem 0 4rem; background:radial-gradient(circle at 75% 5%,#246db4 0,transparent 28rem),var(--navy); }
+    .eyebrow { margin:0 0 .8rem; color:#b6dbff; font-size:.78rem; font-weight:800; letter-spacing:.12em; text-transform:uppercase; }
+    h1 { max-width:760px; margin:0; font-size:clamp(2.3rem,6vw,4.7rem); line-height:1.03; letter-spacing:-.045em; }
+    .hero p:not(.eyebrow) { max-width:680px; margin:1.35rem 0 0; color:#e1efff; font-size:clamp(1.05rem,2vw,1.25rem); }
+    .actions { display:flex; flex-wrap:wrap; gap:.8rem; margin-top:2rem; }
+    .button { display:inline-block; padding:.78rem 1rem; border:1px solid transparent; border-radius:.4rem; background:var(--blue); color:#fff; font-weight:750; text-decoration:none; }
+    .button:hover { background:#115fae; }
+    .button.secondary { border-color:#8db8de; background:transparent; }
+    main { padding:4rem 0; }
+    section { margin-bottom:4.5rem; }
+    h2 { margin:0 0 .55rem; font-size:clamp(1.7rem,3vw,2.45rem); line-height:1.15; letter-spacing:-.03em; }
+    .lead { max-width:720px; margin:0 0 1.6rem; color:var(--muted); font-size:1.05rem; }
+    .grid { display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; }
+    .card { display:flex; flex-direction:column; min-height:240px; padding:1.35rem; border:1px solid var(--line); border-radius:.65rem; background:var(--white); box-shadow:0 10px 24px rgba(17,42,67,.05); }
+    .card h3 { margin:0; font-size:1.2rem; }
+    .card p { color:var(--muted); }
+    .card a { margin-top:auto; color:#075aab; font-weight:750; text-decoration-thickness:1px; text-underline-offset:3px; }
+    .steps { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; counter-reset:steps; }
+    .step { padding:1.25rem; border-radius:.6rem; background:var(--sky); }
+    .step::before { counter-increment:steps; content:counter(steps); display:grid; place-items:center; width:2rem; height:2rem; margin-bottom:.8rem; border-radius:50%; background:var(--blue); color:#fff; font-weight:800; }
+    .step h3 { margin:0 0 .4rem; }
+    .step p { margin:0; color:var(--muted); }
+    .notice { padding:1.2rem 1.3rem; border-left:4px solid var(--blue); background:#eff7ff; }
+    .notice p { margin:.4rem 0 0; color:var(--muted); }
+    footer { padding:2.5rem 0; border-top:1px solid var(--line); color:var(--muted); font-size:.9rem; }
+    footer .wrap { display:flex; flex-wrap:wrap; justify-content:space-between; gap:1rem; }
+    footer a { color:#075aab; }
+    @media (max-width:800px) { .grid { grid-template-columns:repeat(2,1fr); } }
+    @media (max-width:560px) { .nav { padding:1rem 0; align-items:flex-start; flex-direction:column; } .hero { padding:3.5rem 0; } .grid,.steps { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="/">LeaSupport</a>
+      <nav class="nav-links" aria-label="Hovedmeny">
+        <a href="#produkter">Produkter</a>
+        <a href="#slik-far-du-hjelp">Slik får du hjelp</a>
+        <a href="rights.html">Trygg bruk</a>
+      </nav>
+    </div>
+    <div class="wrap hero">
+      <p class="eyebrow">Lea Marketing</p>
+      <h1>Hjelp når du trenger det</h1>
+      <p>LeaSupport samler veiledning og teknisk hjelp for produktene fra Lea Marketing. Velg produkt, beskriv hva som skjer, og få saken din inn på rett sted.</p>
+      <div class="actions">
+        <a class="button" href="https://github.com/leamarketing/leasupport/issues/new/choose">Send supporthenvendelse</a>
+        <a class="button secondary" href="#produkter">Velg produkt</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="produkter">
+      <h2>Velg produkt</h2>
+      <p class="lead">Velg produktet du trenger hjelp med. Hvis du ikke finner det, velger du «Andre produkter» i supportskjemaet.</p>
+      <div class="grid">
+        <article class="card">
+          <h3>StemmeApp</h3>
+          <p>Hjelp med avstemninger, saker, roller og innlogging.</p>
+          <a href="https://github.com/leamarketing/leasupport/issues/new/choose">Få hjelp med StemmeApp</a>
+        </article>
+        <article class="card">
+          <h3>Cluefishing</h3>
+          <p>Hjelp med innhold, konto, tekniske feil og tilbakemeldinger.</p>
+          <a href="https://github.com/leamarketing/leasupport/issues/new/choose">Få hjelp med Cluefishing</a>
+        </article>
+        <article class="card">
+          <h3>BizPlanPilot</h3>
+          <p>Hjelp med tilgang, arbeidsflyt og bruk av plattformen.</p>
+          <a href="https://github.com/leamarketing/leasupport/issues/new/choose">Få hjelp med BizPlanPilot</a>
+        </article>
+        <article class="card">
+          <h3>Andre produkter</h3>
+          <p>Bruk denne inngangen dersom produktet ikke er nevnt over.</p>
+          <a href="https://github.com/leamarketing/leasupport/issues/new/choose">Send generell henvendelse</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="slik-far-du-hjelp">
+      <h2>Slik får du raskest hjelp</h2>
+      <p class="lead">God informasjon i starten gir kortere behandlingstid og færre oppfølgingsspørsmål.</p>
+      <div class="steps">
+        <article class="step"><h3>Velg produkt</h3><p>Oppgi hvilket program du bruker og hvilken funksjon du forsøkte å bruke.</p></article>
+        <article class="step"><h3>Beskriv situasjonen</h3><p>Fortell hva du forventet skulle skje, hva som faktisk skjedde, og når feilen oppstod.</p></article>
+        <article class="step"><h3>Legg ved det som hjelper</h3><p>Skjermbilde, nettleser, enhet og eventuelle feilmeldinger gjør det enklere å finne årsaken.</p></article>
+      </div>
+    </section>
+
+    <section id="trygg-bruk">
+      <h2>Trygg bruk og dine rettigheter</h2>
+      <div class="notice">
+        <strong>Personvern, tilgjengelighet og god support</strong>
+        <p>LeaSupport er laget for at brukere skal kunne finne hjelp uten unødige hindringer. Når du sender en sak, bør du ikke dele passord, betalingskortnummer eller andre sensitive opplysninger. Les om <a href="rights.html">personvern, tilgjengelighet og rettigheter</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>© Lea Marketing</span>
+      <span><a href="https://github.com/leamarketing/leasupport/issues/new/choose">Send supporthenvendelse</a> · <a href="https://github.com/leamarketing/leasupport">GitHub</a></span>
+    </div>
+  </footer>
+</body>
+</html>
